@@ -6,7 +6,7 @@ var c = canvas.getContext('2d');
 
 
 var bone = new Image();
-bone.src = '../img/flow.png';
+bone.src = 'https://i.ibb.co/fD04RTq/flow.png';
 
 var linkText;
 var inLink = false;
