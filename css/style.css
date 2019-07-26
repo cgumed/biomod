@@ -83,6 +83,9 @@ body {
   color: #fff; }
 
 /*PROJECT IDEA PAGE*/
+p {
+  font-size: 1.2rem !important; }
+
 #anchors {
   padding-top: 130px !important; }
 
@@ -130,7 +133,19 @@ canvas {
 /*MEDIA QUERY*/
 @media (max-width: 1000px) {
   #project-video iframe {
-    width: 500px; } }
+    width: 500px !important; } }
+@media (max-width: 770px) {
+  p {
+    font-size: 1rem !important; }
+
+  h1 {
+    font-size: 2em !important; } }
 @media (max-width: 600px) {
   #project-video iframe {
-    width: 300px; } }
+    width: 300px !important; } }
+@media (max-width: 500px) {
+  p {
+    font-size: 0.9rem !important; }
+
+  h1 {
+    font-size: 1.8em; } }
