@@ -138,13 +138,21 @@ body {
 }
 
 #background p,
-#problem-solution p{
+#problem-solution p,
+#reference p{
     text-align:left;
     padding-left:4rem;
     padding-right:4rem;
     padding-top:1.2rem;
 }
 
+strong {
+    font-weight:500;
+}
+
+#reference {
+    background:#f5f6f7;
+}
 
 /*EXPERIMENT PAGE*/
 canvas {
