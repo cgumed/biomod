@@ -105,10 +105,13 @@ p {
 
 #background p,
 #problem-solution p,
-#reference p {
+#reference p,
+#pcr p,
+#detection p,
+#treatment p {
   text-align: left;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   padding-top: 1.2rem; }
 
 strong {
@@ -130,6 +133,13 @@ canvas {
   width: 100%;
   height: 0px; }
 
+/*FUTURE PAGE*/
+#pcr {
+  margin-top: 80px; }
+
+#detection {
+  background: #f5f6f7; }
+
 /*MEDIA QUERY*/
 @media (max-width: 1000px) {
   #project-video iframe {
@@ -139,7 +149,10 @@ canvas {
     font-size: 1rem !important; }
 
   h1 {
-    font-size: 2em !important; } }
+    font-size: 2em !important; }
+
+  .problem-1 {
+    width: 282px; } }
 @media (max-width: 600px) {
   #project-video iframe {
     width: 300px !important; } }
@@ -148,4 +161,7 @@ canvas {
     font-size: 0.9rem !important; }
 
   h1 {
-    font-size: 1.8em; } }
+    font-size: 1.8em; }
+
+  .problem-1 {
+    width: 254px; } }
