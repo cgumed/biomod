@@ -201,8 +201,10 @@ canvas {
     h1 {
         font-size:2em !important;
     }
-    .problem-1 {
-        width:282px;
+    .problem-1,
+    .future-1,
+    .future-2 {
+        width:282px !important;
     }
 }
 
@@ -219,7 +221,9 @@ canvas {
     h1 {
         font-size:1.8em;
     }
-    .problem-1 {
-        width: 254px;
+    .problem-1,
+    .future-1,
+    .future-2 {
+        width: 254px !important;
     }
 }
