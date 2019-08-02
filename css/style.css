@@ -17,13 +17,6 @@ body {
 #main-nav a:hover {
   font-weight: 600; }
 
-#showcase {
-  background: url(../img/nocopyright-background.jpg);
-  min-height: 670px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
 .dark-overlay {
   position: absolute;
   top: 0;
@@ -140,6 +133,12 @@ canvas {
 #detection {
   background: #f5f6f7; }
 
+.problem-1,
+.future-1,
+.future-2,
+.future-3 {
+  height: auto !important; }
+
 /*MEDIA QUERY*/
 @media (max-width: 1000px) {
   #project-video iframe {
@@ -154,6 +153,9 @@ canvas {
   .problem-1,
   .future-1,
   .future-2 {
+    width: 282px !important; }
+
+  .future-3 {
     width: 282px !important; } }
 @media (max-width: 600px) {
   #project-video iframe {
@@ -168,4 +170,7 @@ canvas {
   .problem-1,
   .future-1,
   .future-2 {
+    width: 254px !important; }
+
+  .future-3 {
     width: 254px !important; } }
