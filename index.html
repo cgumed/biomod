@@ -68,7 +68,7 @@
             <h3>Talented Squad</h3>
             <p class="lead">CGUMED features 9 medical sophomores from Chang Gung University, 
                 with each having different talent</p>
-            <a href="#project-video" class="btn btn-outline-primary">Learn more
+            <a href="members.html" class="btn btn-outline-primary">Learn more
                 <i class="fas fa-angle-right d-none"></i>
             </a>
             </div>
@@ -79,7 +79,7 @@
             <h3>Strong Combination</h3>
             <p class="lead">According to our research, aptamer and nanoparticle works perfectly and them 
                 together offer great utilities</p>
-            <a href="#project-video" class="btn btn-outline-primary">Learn more
+            <a href="projectidea.html" class="btn btn-outline-primary">Learn more
                 <i class="fas fa-angle-right d-none"></i>
             </a>
             </div>
@@ -90,7 +90,7 @@
             <h3>Lab Book</h3>
             <p class="lead">We records all our experiment process throughout the past 6 months, and this is 
                 the proof</p>
-            <a href="#project-video" class="btn btn-outline-primary">Learn more
+            <a href="experiment.html" class="btn btn-outline-primary">Learn more
                 <i class="fas fa-angle-right d-none"></i>
             </a>
             </div>
@@ -410,5 +410,33 @@
     crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    <script>
+        // Get the current year for the copyright
+        $('#year').text(new Date().getFullYear());
+    
+        // Video play
+        $(function () {
+          // Auto play modal video
+          $(".video").click(function () {
+            var theModal = $(this).data("target"),
+              videoSRC = $(this).attr("data-video"),
+              videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+            $(theModal + ' iframe').attr('src', videoSRCauto);
+            $(theModal + ' button.close').click(function () {
+              $(theModal + ' iframe').attr('src', videoSRC);
+            });
+          });
+        });
+    
+        // Smooth scrolling
+    
+        $('#showcase a').on('click', function(e) {
+          e.preventDefault();
+          const hash = e.target.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 30
+          }, 500)
+        })
+      </script>
 </body>
 </html>
