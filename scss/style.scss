@@ -186,6 +186,15 @@ canvas {
     background: #f5f6f7;
 }
 
+.problem-1,
+.future-1,
+.future-2,
+.future-3 {
+    height: auto !important;
+}
+
+
+
 /*MEDIA QUERY*/
 @media(max-width:1000px) {
     #project-video iframe{
@@ -203,8 +212,12 @@ canvas {
     }
     .problem-1,
     .future-1,
-    .future-2 {
+    .future-2{
         width:282px !important;
+    }
+
+    .future-3 {
+        width: 282px !important;
     }
 }
 
@@ -224,6 +237,10 @@ canvas {
     .problem-1,
     .future-1,
     .future-2 {
+        width: 254px !important;
+    }
+
+    .future-3 {
         width: 254px !important;
     }
 }
