@@ -69,7 +69,7 @@
       <div class="container">
           <div class="row">
             <div class="col text-center">
-                <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/8a123dab85824754bb546445caaa020f/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="sketchfab-embed-wrapper"><iframe width="100%" height="480" src="https://sketchfab.com/models/37c31b78ef18490b9ef6c43aafc0385b/embed?autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe><p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">    <a href="https://sketchfab.com/3d-models/go-apyamer-complex-37c31b78ef18490b9ef6c43aafc0385b?utm_medium=embed&utm_source=website&utm_campaign=share-popup" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
                     <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
                         <a href="https://sketchfab.com/3d-models/apples-8a123dab85824754bb546445caaa020f?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Apples</a>
@@ -213,12 +213,18 @@
       </div>
     </div>
   </section>
+  <!--BACK TO TOP BTN-->
+  <a href="#" class="to-top-btn">
+    <img src="img/nanotechnology.svg" alt="" width="30"><br>
+    <span>TOP</span>
+  </a>
   <!--FOOTER-->
   <footer id="main-footer" class="p-3 bg-dark text-white text-center">
     <div class="container">
         <div class="row">
         <div class="col">
             <p>Copyright &copy; CGUMED 2019</p>
+            <span>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></span>
         </div>
         </div>
     </div>
@@ -242,9 +248,27 @@
 
         $('html, body').animate({
           scrollTop:$(hash).offset().top - 80
-        })
+        }, 1000)
       }
+    });
+
+    // Back to top button
+    window.addEventListener('scroll', function(e) {
+      e.preventDefault();
+      
+      if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+        document.querySelector('.to-top-btn').style.display = 'block';
+      }else {
+        document.querySelector('.to-top-btn').style.display = 'none';
+      }
+    });
+
+    $('.to-top-btn').on('click', function(e) {
+      $('html, body').animate({
+        scrollTop: 0
+      }, 1000)
     })
+
   </script>
 </body>
 

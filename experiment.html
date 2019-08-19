@@ -161,6 +161,11 @@
             </div>
         </div>
     </section>
+    <!--BACK TO TOP BTN-->
+    <a href="#" class="to-top-btn">
+        <img src="img/nanotechnology.svg" alt="" width="30"><br>
+        <span>TOP</span>
+    </a>
     <!--FOOTER-->
     <footer id="main-footer" class="p-3 bg-dark text-white text-center">
         <div class="container">
@@ -178,5 +183,23 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
     <script src='js/canvas.js'></script>
+    <script>
+        // Back to top button
+        window.addEventListener('scroll', function(e) {
+        e.preventDefault();
+        
+        if(document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+            document.querySelector('.to-top-btn').style.display = 'block';
+        }else {
+            document.querySelector('.to-top-btn').style.display = 'none';
+        }
+        });
+
+        $('.to-top-btn').on('click', function(e) {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000)
+        })
+    </script>
 </body>
 </html>
