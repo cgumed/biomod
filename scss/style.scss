@@ -69,8 +69,8 @@ body {
 
 #abstract p {
     text-align:left;
-    padding-left:4rem;
-    padding-right:4rem;
+    padding-left:2rem;
+    padding-right:2rem;
     padding-top:1.2rem;
 }
 
@@ -184,6 +184,10 @@ canvas {
 .padding {
     width:100%;
     height:0px;
+}
+
+.btn__experiment {
+    margin-bottom: 1rem;
 }
 
 /*FUTURE PAGE*/
