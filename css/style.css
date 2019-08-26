@@ -47,6 +47,9 @@ img {
 #home-icon a:hover .fas {
   display: inline-block !important; }
 
+.icon img {
+  display: inline; }
+
 #abstract {
   background: #f5f6f7; }
 
