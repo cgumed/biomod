@@ -4,6 +4,14 @@ body {
     overflow-x:hidden;
 }
 
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+
  #main-nav {
      opacity:0.8;
      border-bottom:3px solid rgba(25,113,255,0.8);
@@ -168,6 +176,10 @@ a:hover {
     text-decoration: none !important;
 }
 
+.btn-project-idea img {
+    display: inline;
+}
+
 /*EXPERIMENT PAGE*/
 canvas {
     height:auto;
@@ -191,6 +203,10 @@ canvas {
     margin-bottom: 1rem;
 }
 
+.btn__experiment img {
+    display: inline;
+}
+
 /*FUTURE PAGE*/
 
 #pcr {
@@ -208,6 +224,7 @@ canvas {
     width: 400px;
     height: 300px;
 }
+
 
 
 /*MEDIA QUERY*/
@@ -242,8 +259,3 @@ canvas {
     }
 }
 
-img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-}
