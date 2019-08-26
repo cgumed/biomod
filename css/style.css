@@ -148,11 +148,11 @@ canvas {
 #detection {
   background: #f5f6f7; }
 
-.problem-1,
 .future-1,
 .future-2,
 .future-3 {
-  height: auto !important; }
+  width: 400px;
+  height: 300px; }
 
 /*MEDIA QUERY*/
 @media (max-width: 1000px) {
@@ -163,15 +163,7 @@ canvas {
     font-size: 1rem !important; }
 
   h1 {
-    font-size: 2em !important; }
-
-  .problem-1,
-  .future-1,
-  .future-2 {
-    width: 282px !important; }
-
-  .future-3 {
-    width: 282px !important; } }
+    font-size: 2em !important; } }
 @media (max-width: 600px) {
   #project-video iframe {
     width: 300px !important; } }
@@ -180,12 +172,8 @@ canvas {
     font-size: 0.9rem !important; }
 
   h1 {
-    font-size: 1.8em; }
-
-  .problem-1,
-  .future-1,
-  .future-2 {
-    width: 254px !important; }
-
-  .future-3 {
-    width: 254px !important; } }
+    font-size: 1.8em; } }
+img {
+  max-width: 100%;
+  display: block;
+  height: auto; }

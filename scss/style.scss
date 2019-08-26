@@ -200,13 +200,13 @@ canvas {
     background: #f5f6f7;
 }
 
-.problem-1,
+
 .future-1,
 .future-2,
 .future-3 {
-    height: auto !important;
+    width: 400px;
+    height: 300px;
 }
-
 
 
 /*MEDIA QUERY*/
@@ -224,15 +224,6 @@ canvas {
     h1 {
         font-size:2em !important;
     }
-    .problem-1,
-    .future-1,
-    .future-2{
-        width:282px !important;
-    }
-
-    .future-3 {
-        width: 282px !important;
-    }
 }
 
 @media(max-width:600px) {
@@ -248,13 +239,10 @@ canvas {
     h1 {
         font-size:1.8em;
     }
-    .problem-1,
-    .future-1,
-    .future-2 {
-        width: 254px !important;
-    }
+}
 
-    .future-3 {
-        width: 254px !important;
-    }
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
