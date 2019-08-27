@@ -292,7 +292,33 @@
             scene.add(dna);
         }
 
+        // Center big nano ball
+        let geometryNano = new THREE.SphereGeometry(0.5,30,30);
+        let materialNano = new THREE.MeshPhongMaterial({
+            color:0xB7B7B7,
+            side:THREE.DoubleSide,
+            shininess:100
+        });
+
+        let radiusNano = 2.5;
+        let theta = 0;
+        let phi = 0;
+
         let createGeometry = function() {
+            let sphere = new THREE.Mesh(geometryNano, materialNano);
+
+            theta = randomInRange(0, Math.PI*2);
+            phi = randomInRange(0, Math.PI*2);
+
+
+            sphere.position.x = radiusNano * Math.cos(theta) * Math.sin(phi );
+            sphere.position.y = radiusNano * Math.cos(phi);
+            sphere.position.z = radiusNano * Math.sin(theta) * Math.sin(phi );
+
+            scene.add(sphere);
+        } 
+
+/*         let createGeometry = function() {
             let geometry = new THREE.SphereGeometry(0.5,30,30);
             let material = new THREE.MeshPhongMaterial({
                 color:0xB7B7B7,
@@ -311,9 +337,8 @@
             sphere.position.z = radius * Math.sin(theta) * Math.sin(phi );
 
 
-            nanos.push(sphere);
             scene.add(sphere);
-        }
+        } */
 
 
         let createParticles = function() {
@@ -381,9 +406,6 @@
 
             // main animation loop - calls 50-60 in a second
             let mainLoop = function() {
-                //DNAs[0].position.x = 10 * Math.cos(theta1) * Math.sin(phi1 );
-                //DNAs[0].position.y = 10 * Math.cos(phi1);
-                //DNAs[0].position.z = 10 * Math.sin(theta1) * Math.sin(phi1 );
 
                 DNAs[0].position.x = 12 * Math.sin(theta1);
                 DNAs[0].position.z = 12 * Math.cos(theta1);
