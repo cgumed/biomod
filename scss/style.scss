@@ -31,7 +31,21 @@ img {
     font-weight: 600;
 }
 
+// dropdown-item links
 
+
+.dropdown-toggle:hover {
+    font-weight: 400 !important;
+}
+
+.dropdown-item {
+    margin-left:0rem !important;
+    color: #1971ff !important;
+}
+
+.dropdown-item:active {
+    background: none !important;
+}
 
  .dark-overlay {
      position:absolute;
