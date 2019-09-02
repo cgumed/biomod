@@ -117,9 +117,10 @@ p {
   -webkit-transform: translateY(-26px);
   transform: translateY(-26px); }
 
-#background {
-  background: #f5f6f7;
-  margin-top: 50px; }
+#background,
+#problem-solution {
+  background: #fff;
+  margin-top: 100px; }
 
 #background p,
 #problem-solution p,
@@ -132,8 +133,9 @@ p {
   padding-right: 2rem;
   padding-top: 1.2rem; }
 
-strong {
-  font-weight: 500; }
+.subtitle {
+  font-weight: 500;
+  font-size: 1.3rem; }
 
 #reference {
   background: #f5f6f7; }
@@ -188,7 +190,10 @@ canvas {
 /*MEDIA QUERY*/
 @media (max-width: 1000px) {
   #project-video iframe {
-    width: 500px !important; } }
+    width: 500px !important; }
+
+  .subtitle {
+    font-size: 1.3rem; } }
 @media (max-width: 770px) {
   p {
     font-size: 1rem !important; }
@@ -197,7 +202,10 @@ canvas {
     font-size: 2em !important; }
 
   .card-body {
-    min-height: 300px !important; } }
+    min-height: 300px !important; }
+
+  .subtitle {
+    font-size: 1.1rem; } }
 @media (max-width: 600px) {
   #project-video iframe {
     width: 300px !important; } }
@@ -206,4 +214,8 @@ canvas {
     font-size: 0.9rem !important; }
 
   h1 {
-    font-size: 1.8em; } }
+    font-size: 1.8em; }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 1rem; } }
