@@ -52,7 +52,7 @@
     </div>
     </nav>
     <!--ANCHORS-->
-    <div id="anchors">
+    <!-- <div id="anchors">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -79,20 +79,160 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
     <div class="padding"></div>
     <!--CANVAS FLOW CHART-->
     <canvas id="myCanvas" class="ml-auto"></canvas>
 
     <!--STEP 1-->
-    <section id="one">
+    <section id="one" class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
-                    <h1>Step One</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet sapiente itaque ratione amet quasi iste voluptatem possimus laboriosam facilis?</p>
+                    <h1 class="text-center">Step One: Aptamer Test</h1>
+                    <h3>Aim</h3>
+                    <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;There are many aptamers targeting Taq polymerase. We want to know which one has the best efficiency, and we are going to use it to conduct our next experiment.</p>
                     <br>
+                    <h3>Matterial & Method</h3>
+                    <p class="lead"><strong class="subtitle"><u>Hairpin Essay</u></strong><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        To measure the function and its inhibition of Taq Pol, a method called Hairpin extension assay is applied. During this assay, a hairpin-shaped oligonucleotide is used (In our experiment, we use a 49 mer-length of oligonucleotide). This hairpin-shaped DNA consists of three domains, the loop, a longer tail, and a shorter tail. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        During the PCR condition, the Taq Polymerase would bind to the hairpin oligonucleotides, executing the process of DNA elongation at the shorter tail.  If the polymerase works smoothly, the hairpin DNA would have a pair of equal-length tail (the total length would become 64 mer in our experiment) eventually. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        However, if the Taq Pol fails to perform its job perfectly during some situations, the total length and structure would remain the same or have the length between original hairpin and equal-length tail hairpin. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        Extension DNA product is analyzed by DNA electrophoresis in acrylamide gel. Fragments with different lengths will be separated. By measuring the amount of extension product, we can know the activity of polymerase. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        Appropriate aptamer selection and Graphene Oxide (GO)/GO-aptamer experiments are conducted using the following protocol.
+                    </p>
+                    <figure>
+                        <img src="img/experiment-step1-1.png" alt="" class="ml-auto mr-auto mb-2">
+                        <figcaption class="text-center">Figure 1. 49mer hairpin: 5’-ATG CCT AAG TTT CGA ACG CGG CTA GCC AGC TTT TGC TGG CTA GCC GCG T-3’</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/experiment-step1-2.png" alt="" class="ml-auto mr-auto mb-2">
+                        <figcaption class="text-center">Figure 2. 64mer hairpin extension: 5’-ATG CCT AAG TTT CGA ACG CGG CTA GCC AGC TTT TGC TGG CTA GCC GCG TTC GAA ACT TAG GCA T-3’</figcaption>
+                    </figure>
+                    
+                    <h3>Aptamer Test</h3>
+                    <ol class="lead">
+                        <li>In each 100μl PCR tube 1.1μl PCR buffer, 0.4μl Taq polymerase , 1.1-2.2μl examine aptamer sample (aptamer, dimer aptamer, GO/GO-aptamer) are mixed, and ddH2O is added to 7.7μl</li>
+                        <li>Samples are incubated at room temperature for 30min to form up polymerase-aptamer complex
+                            <figure>
+                                <img src="img/experiment-step1-3.png" alt="" class="ml-auto mr-auto mt-2">
+                            </figure>
+                        </li>
+                        <li>1.1μl 49bp hairpin DNA are added in every sample tube and kept on ice box to avoid room temperature PCR</li>
+                        <li>Hot-start PCR are initiated following each experiment’s PCR protocol in PCR machine</li>
+                        <li>EDTA1.1μl are added into each tube to stop reaction</li>
+                        <li>After adding 1.1μl of complementary hairpin DNA, temperature gradient incubation (95 ℃ 15min, 75℃ 5min, 55℃ 5min, 35℃ 5min, 15℃ 5min) is exerted in order to form dsDNA hairpin for easier further analysis
+                            <figure>
+                                <img src="img/experiment-step1-4.png" alt="" class="ml-auto mr-auto mt-2">
+                            </figure>
+                            <figure>
+                                <img src="img/experiment-step1-5.png" alt="" class="ml-auto mr-auto mt-2">
+                            </figure>
+                        </li>
+                    </ol>
+                    <h3>Gel electrophoresis</h3>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        We prepared acrylamide gel for gel electrophoresis to examine our aptamer test result.  <br>
+                        <ol class="lead">
+                            <li>Each sample tube is added with 2.2μl DNA loading dye</li>
+                            <li>Glass container are sealed up by 2% agarose</li>
+                            <li>26.7ml Bis/acrylamide, 10ml pH8.8 Tris, 2.33ml ddH2O, 400μl APS and 40μl TEMED are mixed and added to the glass gel container to form a 40ml acrylamide gel</li>
+                            <li>6μl 50bp DNA ladder and 12μl of sample in each tube are loaded into well. Electrophoresis are preformed using electrophoresis chamber and 0.5X TBE buffer (5X TBE buffer, 1:10 dilution ), with a time duration of 4 hours and a 170V of voltage</li>
+                            <li>The electrophoresis chamber is dissembled, following up with gel staining (Novel Green, Gene Direx, 1:10000 dilution) for 30min</li>
+                            <li>The final result is examined by gel imager</li>
+                        </ol>
+                    </p>
+                    <h3>Capillary gel electrophoresis</h3>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        Capillary gel electrophoresis (CGE) is a method to separate short DNA fragment by their difference of charge and size. Its efficiency and sensitive are much higher than traditional gel electrophoresis. In our experiment, we used it to identify 49mer hairpin and 64mer hairpin extension, and apply CGE on aptamer test. <br>
+                        <figure>
+                            <img src="img/experiment-step1-6.png" alt="" width="633.5" height="396" class="ml-auto mr-auto">
+                        </figure>
+                    </p>
+                    <h3>Result</h3>
+                    <ul style="list-style: none">
+                        <li><strong class="subtitle"><u>Gel Electrophoresis</u></strong>
+                            <figure>
+                                <img src="img/experiment-step1-7.png" alt="" width="619.3" height="306.66" class="ml-auto mr-auto mt-2">
+                            </figure>
+                        </li>
+                        <li>
+                            <table style="border-collapse: collapse;" border="1" class="ml-auto mr-auto experiment-table" width="100%">
+                                <tr>
+                                    <td>Temperature / inhibit efficiency</td>
+                                    <td>25℃</td>
+                                    <td>30℃</td>
+                                    <td>35℃</td>
+                                    <td>40℃</td>
+                                    <td>45℃</td>
+                                </tr>
+                                <tr>
+                                    <td>tq21</td>
+                                    <td>98.97%</td>
+                                    <td>98.23%</td>
+                                    <td>98.92%</td>
+                                    <td>45.77%</td>
+                                    <td>13.31%</td>
+                                </tr>
+                                <tr>
+                                    <td>cw1</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>90.43%</td>
+                                    <td>21.44%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>cw3</td>
+                                    <td>100%</td>
+                                    <td>100%</td>
+                                    <td>70.65%</td>
+                                    <td>43.67%</td>
+                                    <td>0.01%</td>
+                                </tr>
+                                <tr>
+                                    <td>cw4</td>
+                                    <td>88.38%</td>
+                                    <td>88.06%</td>
+                                    <td>22.87%</td>
+                                    <td>0%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>aptamer 4-1</td>
+                                    <td>95.34%</td>
+                                    <td>94.83%</td>
+                                    <td>94.83%</td>
+                                    <td>25.71%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>aptamer 6-10</td>
+                                    <td>99.99%</td>
+                                    <td>90.93%</td>
+                                    <td>60.32%</td>
+                                    <td>0%</td>
+                                    <td>0%</td>
+                                </tr>
+                                <tr>
+                                    <td>anti taq</td>
+                                    <td>96.28%</td>
+                                    <td>--</td>
+                                    <td>61.66%</td>
+                                    <td>7.66%</td>
+                                    <td>7.87%</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
                     <br>
                     <br>
                     <br>
@@ -106,7 +246,7 @@
         </div>
     </section>
     <!--STEP 2-->
-    <section id="two" class="bg-secondary">
+    <section id="two">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -126,7 +266,7 @@
         </div>
     </section>
     <!--STEP 3-->
-    <section id="three">
+    <section id="three" class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -146,7 +286,7 @@
         </div>
     </section>
     <!--STEP 4-->
-    <section id="four" class="bg-secondary">
+    <section id="four">
         <div class="container">
                 <div class="row">
                     <div class="col py-5">
@@ -166,7 +306,7 @@
             </div>
     </section>
     <!--STEP 5-->
-    <section id="five">
+    <section id="five" class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col py-5">

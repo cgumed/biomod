@@ -219,7 +219,7 @@ canvas {
 }
 
 #myCanvas {
-    margin-top: -50px;
+    margin-top: 20px;
 }
 
 .padding {
@@ -234,6 +234,11 @@ canvas {
 .btn__experiment img {
     display: inline;
 }
+
+.experiment-table td {
+    padding: 0.5rem;
+}
+
 
 /*FUTURE PAGE*/
 
@@ -264,12 +269,15 @@ canvas {
     .subtitle {
         font-size: 1.3rem;
     }
+    /* figcaption {
+        font-size: 0.9rem;
+    } */
 }
 
 @media (max-width:770px) {
-    p {
+    /* p {
         font-size:1rem !important;
-    }
+    } */
     h1 {
         font-size:2em !important;
     }
@@ -281,19 +289,22 @@ canvas {
     .subtitle {
         font-size: 1.1rem;
     }
+
+    /* figcaption {
+        font-size: 0.72rem;
+    } */
 }
 
 @media(max-width:600px) {
     #project-video iframe{
         width:300px !important;
     }
-
 }
 
 @media (max-width:500px) {
-    p {
+    /* p {
         font-size:0.9rem !important;
-    }
+    } */
     h1 {
         font-size:1.8em;
     }
@@ -302,6 +313,13 @@ canvas {
     .subtitle {
         font-weight:500;
         font-size: 1rem;
+    }
+    
+    /* figcaption {
+        font-size: 0.65rem;
+    } */
+    .experiment-table {
+        font-size: 0.9rem;
     }
 }
 

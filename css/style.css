@@ -162,7 +162,7 @@ canvas {
   display: block; }
 
 #myCanvas {
-  margin-top: -50px; }
+  margin-top: 20px; }
 
 .padding {
   width: 100%;
@@ -173,6 +173,9 @@ canvas {
 
 .btn__experiment img {
   display: inline; }
+
+.experiment-table td {
+  padding: 0.5rem; }
 
 /*FUTURE PAGE*/
 #pcr {
@@ -193,11 +196,15 @@ canvas {
     width: 500px !important; }
 
   .subtitle {
-    font-size: 1.3rem; } }
-@media (max-width: 770px) {
-  p {
-    font-size: 1rem !important; }
+    font-size: 1.3rem; }
 
+  /* figcaption {
+      font-size: 0.9rem;
+  } */ }
+@media (max-width: 770px) {
+  /* p {
+      font-size:1rem !important;
+  } */
   h1 {
     font-size: 2em !important; }
 
@@ -205,17 +212,27 @@ canvas {
     min-height: 300px !important; }
 
   .subtitle {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+
+  /* figcaption {
+      font-size: 0.72rem;
+  } */ }
 @media (max-width: 600px) {
   #project-video iframe {
     width: 300px !important; } }
 @media (max-width: 500px) {
-  p {
-    font-size: 0.9rem !important; }
-
+  /* p {
+      font-size:0.9rem !important;
+  } */
   h1 {
     font-size: 1.8em; }
 
   .subtitle {
     font-weight: 500;
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  /* figcaption {
+      font-size: 0.65rem;
+  } */
+  .experiment-table {
+    font-size: 0.9rem; } }
