@@ -177,6 +177,16 @@ canvas {
 .experiment-table td {
   padding: 0.5rem; }
 
+caption {
+  color: #6c757d;
+  caption-side: top; }
+
+figcaption {
+  color: #6c757d; }
+
+.highlight {
+  background: yellow; }
+
 /*FUTURE PAGE*/
 #pcr {
   margin-top: 80px; }

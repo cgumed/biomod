@@ -92,21 +92,24 @@
                 <div class="col py-5">
                     <h1 class="text-center">Step One: Aptamer Test</h1>
                     <h3>Aim</h3>
-                    <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;There are many aptamers targeting Taq polymerase. We want to know which one has the best efficiency, and we are going to use it to conduct our next experiment.</p>
-                    <br>
+                    <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;There are many aptamers targeting Taq polymerase. We want to know which one has the best efficiency, and we are going to use it to conduct our next experiment.</p>                    
                     <h3>Matterial & Method</h3>
-                    <p class="lead"><strong class="subtitle"><u>Hairpin Essay</u></strong><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        To measure the function and its inhibition of Taq Pol, a method called Hairpin extension assay is applied. During this assay, a hairpin-shaped oligonucleotide is used (In our experiment, we use a 49 mer-length of oligonucleotide). This hairpin-shaped DNA consists of three domains, the loop, a longer tail, and a shorter tail. <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        During the PCR condition, the Taq Polymerase would bind to the hairpin oligonucleotides, executing the process of DNA elongation at the shorter tail.  If the polymerase works smoothly, the hairpin DNA would have a pair of equal-length tail (the total length would become 64 mer in our experiment) eventually. <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        However, if the Taq Pol fails to perform its job perfectly during some situations, the total length and structure would remain the same or have the length between original hairpin and equal-length tail hairpin. <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        Extension DNA product is analyzed by DNA electrophoresis in acrylamide gel. Fragments with different lengths will be separated. By measuring the amount of extension product, we can know the activity of polymerase. <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
-                        Appropriate aptamer selection and Graphene Oxide (GO)/GO-aptamer experiments are conducted using the following protocol.
-                    </p>
+                    <ul style="list-style: none">
+                        <li>
+                            <p class="lead"><strong class="subtitle"><u>Hairpin Essay</u></strong><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                To measure the function and its inhibition of Taq Pol, a method called Hairpin extension assay is applied. During this assay, a hairpin-shaped oligonucleotide is used (In our experiment, we use a 49 mer-length of oligonucleotide). This hairpin-shaped DNA consists of three domains, the loop, a longer tail, and a shorter tail. <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                During the PCR condition, the Taq Polymerase would bind to the hairpin oligonucleotides, executing the process of DNA elongation at the shorter tail.  If the polymerase works smoothly, the hairpin DNA would have a pair of equal-length tail (the total length would become 64 mer in our experiment) eventually. <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                However, if the Taq Pol fails to perform its job perfectly during some situations, the total length and structure would remain the same or have the length between original hairpin and equal-length tail hairpin. <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                Extension DNA product is analyzed by DNA electrophoresis in acrylamide gel. Fragments with different lengths will be separated. By measuring the amount of extension product, we can know the activity of polymerase. <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                Appropriate aptamer selection and Graphene Oxide (GO)/GO-aptamer experiments are conducted using the following protocol.
+                            </p>
+                        </li>
+                    </ul>
                     <figure>
                         <img src="img/experiment-step1-1.png" alt="" class="ml-auto mr-auto mb-2">
                         <figcaption class="text-center">Figure 1. 49mer hairpin: 5’-ATG CCT AAG TTT CGA ACG CGG CTA GCC AGC TTT TGC TGG CTA GCC GCG T-3’</figcaption>
@@ -127,7 +130,7 @@
                         <li>1.1μl 49bp hairpin DNA are added in every sample tube and kept on ice box to avoid room temperature PCR</li>
                         <li>Hot-start PCR are initiated following each experiment’s PCR protocol in PCR machine</li>
                         <li>EDTA1.1μl are added into each tube to stop reaction</li>
-                        <li>After adding 1.1μl of complementary hairpin DNA, temperature gradient incubation (95 ℃ 15min, 75℃ 5min, 55℃ 5min, 35℃ 5min, 15℃ 5min) is exerted in order to form dsDNA hairpin for easier further analysis
+                        <li>After adding 1.1μl of complementary hairpin DNA, temperature gradient incubation (95 °C 15min, 75°C 5min, 55°C 5min, 35°C 5min, 15°C 5min) is exerted in order to form dsDNA hairpin for easier further analysis
                             <figure>
                                 <img src="img/experiment-step1-4.png" alt="" class="ml-auto mr-auto mt-2">
                             </figure>
@@ -163,84 +166,150 @@
                             <figure>
                                 <img src="img/experiment-step1-7.png" alt="" width="619.3" height="306.66" class="ml-auto mr-auto mt-2">
                             </figure>
-                        </li>
-                        <li>
-                            <table style="border-collapse: collapse;" border="1" class="ml-auto mr-auto experiment-table" width="100%">
-                                <tr>
-                                    <td>Temperature / inhibit efficiency</td>
-                                    <td>25℃</td>
-                                    <td>30℃</td>
-                                    <td>35℃</td>
-                                    <td>40℃</td>
-                                    <td>45℃</td>
-                                </tr>
-                                <tr>
-                                    <td>tq21</td>
-                                    <td>98.97%</td>
-                                    <td>98.23%</td>
-                                    <td>98.92%</td>
-                                    <td>45.77%</td>
-                                    <td>13.31%</td>
-                                </tr>
-                                <tr>
-                                    <td>cw1</td>
-                                    <td>100%</td>
-                                    <td>100%</td>
-                                    <td>90.43%</td>
-                                    <td>21.44%</td>
-                                    <td>0%</td>
-                                </tr>
-                                <tr>
-                                    <td>cw3</td>
-                                    <td>100%</td>
-                                    <td>100%</td>
-                                    <td>70.65%</td>
-                                    <td>43.67%</td>
-                                    <td>0.01%</td>
-                                </tr>
-                                <tr>
-                                    <td>cw4</td>
-                                    <td>88.38%</td>
-                                    <td>88.06%</td>
-                                    <td>22.87%</td>
-                                    <td>0%</td>
-                                    <td>0%</td>
-                                </tr>
-                                <tr>
-                                    <td>aptamer 4-1</td>
-                                    <td>95.34%</td>
-                                    <td>94.83%</td>
-                                    <td>94.83%</td>
-                                    <td>25.71%</td>
-                                    <td>0%</td>
-                                </tr>
-                                <tr>
-                                    <td>aptamer 6-10</td>
-                                    <td>99.99%</td>
-                                    <td>90.93%</td>
-                                    <td>60.32%</td>
-                                    <td>0%</td>
-                                    <td>0%</td>
-                                </tr>
-                                <tr>
-                                    <td>anti taq</td>
-                                    <td>96.28%</td>
-                                    <td>--</td>
-                                    <td>61.66%</td>
-                                    <td>7.66%</td>
-                                    <td>7.87%</td>
-                                </tr>
+                            <table style="border-collapse: collapse;" border="1" class="ml-auto mr-auto experiment-table table table-bordered table-hover" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th>Temperature / inhibit efficiency</th>
+                                        <th>25℃</th>
+                                        <th>30℃</th>
+                                        <th>35℃</th>
+                                        <th>40℃</th>
+                                        <th>45℃</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tq21</td>
+                                        <td>98.97%</td>
+                                        <td>98.23%</td>
+                                        <td>98.92%</td>
+                                        <td>45.77%</td>
+                                        <td>13.31%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw1</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>90.43%</td>
+                                        <td>21.44%</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw3</td>
+                                        <td>100%</td>
+                                        <td>100%</td>
+                                        <td>70.65%</td>
+                                        <td>43.67%</td>
+                                        <td>0.01%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw4</td>
+                                        <td>88.38%</td>
+                                        <td>88.06%</td>
+                                        <td>22.87%</td>
+                                        <td>0%</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 4-1</td>
+                                        <td>95.34%</td>
+                                        <td>94.83%</td>
+                                        <td>94.83%</td>
+                                        <td>25.71%</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 6-10</td>
+                                        <td>99.99%</td>
+                                        <td>90.93%</td>
+                                        <td>60.32%</td>
+                                        <td>0%</td>
+                                        <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anti-Taq</td>
+                                        <td>96.28%</td>
+                                        <td>--</td>
+                                        <td>61.66%</td>
+                                        <td>7.66%</td>
+                                        <td>7.87%</td>
+                                    </tr>
+                                </tbody>
                             </table>
                         </li>
+                        <li><strong class="subtitle"><u>Capillary gel electrophoresis</u></strong>
+                            <table style="border-collapse: collapse;" border="1" class="mt-3 ml-auto mr-auto experiment-table table table-bordered table-hover" width="100%">
+                                <caption>Intensity</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Temperature / inhibit efficiency</th>
+                                        <th>35℃</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tq21</td>
+                                        <td>47.42%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw1</td>
+                                        <td>13.03%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw3</td>
+                                        <td>37.22%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 4-1</td>
+                                        <td>29.77%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 6-10</td>
+                                        <td>32.55%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anti-Taq</td>
+                                        <td>2.36%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <figure>
+                                <figcaption>Control</figcaption>
+                                <img src="img/cge-1-control.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>tq21</figcaption>
+                                <img src="img/cge-1-tq21.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>cw1</figcaption>
+                                <img src="img/cge-1-cw1.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>cw3</figcaption>
+                                <img src="img/cge-1-cw3.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>Aptamer 4-1</figcaption>
+                                <img src="img/cge-1-4-1.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>Aptamer 6-10</figcaption>
+                                <img src="img/cge-1-6-10.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                            <figure>
+                                <figcaption>Anti-Taq</figcaption>
+                                <img src="img/cge-1-anti-taq.PNG" alt="" class="ml-auto mr-auto mt-3" width="600">
+                            </figure>
+                        </li>
                     </ul>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br><br><br><br><br>
+                    <h3>Discussion</h3>
+                    <ol class="lead">
+                        <li>From PAGE(polyacrylamide gel electrophoresis) experiment result, we can conclude that all Ic50 values of aptamers ranged from 33-39°C. Higher temperatures generally decrease the inhibitory efficiency of aptamers selected against Taq polymerase. Efficiencies begin to drop from the initial value when the temperature rises above 30°C</li>
+                        <li>Among all aptamers, tq-21 has the highest critical temperature (the temperature at which efficiency starts to drop) and the highest efficiency of 13.31% at 45°C</li>
+                        <li>CGE (Capillary gel electrophoresis) measurement supported that tq-21 is the best inhibitor among all aptamers tested, with about 47% inhibitory efficiency at 35°C</li>
+                        <li>If to choose the second-best inhibitor, cw-1,cw-3 and anti-taq are the possible choices. These aptamers have the second highest inhibitory efficiency at 35, 40, and 45°C, respectively. Our further tests of aptamer hetero/homodimers took all three into considerations</li>
+                    </ol>
                 </div>
             </div>
         </div>
@@ -250,17 +319,363 @@
         <div class="container">
             <div class="row">
                 <div class="col py-5">
-                    <h1>Step Two</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet sapiente itaque ratione amet quasi iste voluptatem possimus laboriosam facilis?</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br><br><br><br><br>
+                    <h1 class="text-center">Step Two: Aptamer Design</h1>
+                    <h3>Aim</h3>
+                    <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;To enhance the efficiency of aptamer, we modify the sequence of aptamer, and thus change its 3D structure.</p>
+                    
+                    <h3>Material & Method</h3>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;The following are the aptamers we used. 
+                        <table style="border-collapse: collapse;" border="1" class="mt-3 ml-auto mr-auto experiment-table table table-bordered table-hover text-center" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Sequence</th>
+                                    <th>2D Structure</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center align-middle">tq21</td>
+                                    <td class="text-center align-middle">5’-TTC TCG GTT GGT CTC TGG CGG AGC GAT CAT CTC AGA GCA TTC TTA GCG TTT TGT TCT TGT GTA TGA TTC GCT TTT CCC-3’</td>
+                                    <td>
+                                        <img src="img/structure-tq21.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">cw1</td>
+                                    <td class="text-center align-middle">5’-GTT CAG GAC GCT TAT GTG AAC-3’</td>
+                                    <td>
+                                        <img src="img/structure-cw1.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">cw3</td>
+                                    <td class="text-center align-middle">5’-CGA TCA TCT CAG AAC ATT CTT AGC GTT TTG TTC TTG TGT ATG ATC G-3’</td>
+                                    <td>
+                                        <img src="img/structure-cw3.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">cw4</td>
+                                    <td class="text-center align-middle">5’-TTT TTT GGC GGA GCG ATC ATC TCA GAG CAT TCT TAG CGT TTT GTT CTT GTC TAT GA-3’</td>
+                                    <td>
+                                        <img src="img/structure-cw4.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">Aptamer 4-1</td>
+                                    <td class="text-center align-middle">5’-ACT TGA TGG CGG GTG TGG TAG GCG CCA TCT-3’</td>
+                                    <td>
+                                        <img src="img/structure-4-1.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">Aptamer 6-10</td>
+                                    <td class="text-center align-middle">5’-CAA GAC GGG CGG GTG TGG TAG GCG CCC GTG-3’</td>
+                                    <td>
+                                        <img src="img/structure-6-10.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center align-middle">Anti-Taq</td>
+                                    <td class="text-center align-middle">5’-ACA TTG CTC TTC ATA TAG TGA CAA TGT ACA GTA TTG-3’</td>
+                                    <td>
+                                        <img src="img/structure-anti-taq.png" alt="" width="150" class="mr-auto ml-auto">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    <ol class="lead">
+                        <li>
+                            Hybrid aptamer
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                We design 18 mer of complementary sequence to make aptamer-dimer. 
+                                We suppose that when two aptamer combine together, their structure will become more stable. Besides, 
+                                if two aptamer have different binding site on polymerase, they can inhibit the enzyme simultaneously.
+                                <figure>
+                                    <img src="img/hybrid-aptamer.png" alt="" width="600" class="ml-auto mr-auto">
+                                    <figcaption class="text-center" style="transform: translateY(-20px)">
+                                        figure1: aptamer complementary sequence <br>
+                                        Left: <u>ATGCAACATATTTACGAT</u> <br>
+                                        Right: <u>TACGTTGTATAAATGCTA</u>
+                                    </figcaption>
+                                </figure>
+                            </p>
+                        </li>
+                        <li>
+                            Binding on graphene oxide
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                We supposed that combine aptamer with graphene oxide can enhance the efficiency of inhibiting polymerase. 
+                                Therefore, to bind on graphene oxide, we add poly A (20 adenine) at the 5’ end of the aptamer. 
+                                The poly A can increase the hydrogen bond and van der waals forces between aptamers and graphene oxide.
+                                <figure>
+                                    <img src="img/aptamer-binding.png" alt="" width="600" class="ml-auto mr-auto">
+                                    <figcaption class="text-center">
+                                        Figure2: poly A help aptamer to combine with graphene oxide
+                                    </figcaption>
+                                </figure>
+                            </p>
+                        </li>
+                    </ol>
+                    <h3>Result</h3>
+                    <table style="border-collapse: collapse;" border="1" class="mt-3 ml-auto mr-auto experiment-table table table-bordered table-hover text-center" width="100%">
+                        <thead>
+                            <th>--</th>
+                            <th>Modified aptamer RH</th>
+                            <th>Modified aptamer LH</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-center align-middle">tq21</th>
+                                <td>
+                                    <img src="img/tq21-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/tq21-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">cw1</th>
+                                <td>
+                                    <img src="img/cw1-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/cw1-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">cw3</th>
+                                <td>
+                                    <img src="img/cw3-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/cw3-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">cw4</th>
+                                <td>
+                                    <img src="img/cw4-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/cw4-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">Aptamer 4-1</th>
+                                <td>
+                                    <img src="img/4-1-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/4-1-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">Aptamer 6-10</th>
+                                <td>
+                                    <img src="img/6-10-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/6-10-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="text-center align-middle">Anti-Taq</th>
+                                <td>
+                                    <img src="img/anti-taq-rh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                                <td>
+                                    <img src="img/anti-taq-lh.png" alt="" width="200" class="mr-auto ml-auto">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <figure>
+                        <img src="img/aptamer-np-complex.png" alt="" width="300" class="mr-auto ml-auto">
+                        <figcaption class="text-center">
+                            Figure3: aptamer dimer and graphene oxide complex
+                        </figcaption>
+                    </figure>
+                    <ul style="list-style: none">
+                        <li>
+                            <strong class="subtitle"><u>Modified aptamer capillary gel electrophoresis</u></strong>
+                            <table style="border-collapse: collapse;" border="1" class="mt-3 ml-auto mr-auto experiment-table table table-bordered table-hover text-center" width="100%">
+                                <thead>
+                                    <th>Temperature / inhibit efficiency</th>
+                                    <th>Original aptamer (35℃)</th>
+                                    <th>Modified aptamer RH (35℃)</th>
+                                    <th>Modified aptamer LH (35℃)</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>tq21</td>
+                                        <td>47.42%</td>
+                                        <td class="">
+                                            8.7%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                        <td>
+                                            <span class="highlight">40.11%</span>
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw1</td>
+                                        <td>13.03%</td>
+                                        <td>
+                                            15.53%
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                        <td>
+                                            4.6%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw3</td>
+                                        <td>37.22%</td>
+                                        <td>
+                                            <span class="highlight">44.18%</span>
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                        <td>
+                                            <span class="highlight">100%</span>
+                                            &nbsp;<i class="fas fa-arrow-up text-success"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>cw4</td>
+                                        <td>6.19%</td>
+                                        <td>
+                                            8.25%
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                        <td>
+                                            6.94%
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 4-1</td>
+                                        <td>29.77%</td>
+                                        <td>
+                                            <span class="highlight">25.45%</span>
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                        <td>
+                                            35.83%
+                                            &nbsp;<i class="fas fa-circle text-primary" style="transform: scale(0.8)"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Aptamer 6-10</td>
+                                        <td>32.55%</td>
+                                        <td>
+                                            15.82%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                        <td>
+                                            23.89%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anti-Taq</td>
+                                        <td>22.36%</td>
+                                        <td>
+                                            13.12%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                        <td>
+                                            9.6%
+                                            &nbsp;<i class="fas fa-arrow-down text-danger"></i>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <figure>
+                                <figcaption>Control</figcaption>
+                                <img src="img/cge-2-control.PNG" alt="" width="600" class="mt-3 mr-auto ml-auto">
+                            </figure>
+                            <table style="border-collapse: collapse;" border="1" class="mt-3 ml-auto mr-auto experiment-table table table-bordered table-hover text-center" width="100%">
+                                <thead>
+                                    <th>--</th>
+                                    <th>Modified aptamer RH</th>
+                                    <th>Modified aptamer LH</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th class="text-center align-middle">tq21</th>
+                                        <td>
+                                            <img src="img/cge-rh-tq21.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-tq21.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">cw1</th>
+                                        <td>
+                                            <img src="img/cge-rh-cw1.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-cw1.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">cw3</th>
+                                        <td>
+                                            <img src="img/cge-rh-cw3.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-cw3.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">cw4</th>
+                                        <td>
+                                            <img src="img/cge-rh-cw4.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-cw4.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">Aptamer 4-1</th>
+                                        <td>
+                                            <img src="img/cge-rh-4-1.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-4-1.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">Aptamer 6-10</th>
+                                        <td>
+                                            <img src="img/cge-rh-6-10.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-6-10.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-center align-middle">Anti-Taq</th>
+                                        <td>
+                                            <img src="img/cge-rh-anti-taq.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                        <td>
+                                            <img src="img/cge-lh-anti-taq.PNG" alt="" width="200" class="mr-auto ml-auto">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+                    <h3>Discussion</h3>
                 </div>
             </div>
         </div>
@@ -270,7 +685,7 @@
         <div class="container">
             <div class="row">
                 <div class="col py-5">
-                    <h1>Step Three</h1>
+                    <h1 class="text-center">Step Three</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet sapiente itaque ratione amet quasi iste voluptatem possimus laboriosam facilis?</p>
                     <br>
                     <br>
@@ -290,7 +705,7 @@
         <div class="container">
                 <div class="row">
                     <div class="col py-5">
-                        <h1>Step Four</h1>
+                        <h1 class="text-center">Step Four</h1>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet sapiente itaque ratione amet quasi iste voluptatem possimus laboriosam facilis?</p>
                         <br>
                         <br>
@@ -310,17 +725,59 @@
         <div class="container">
             <div class="row">
                 <div class="col py-5">
-                    <h1>Step Five</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam eveniet sapiente itaque ratione amet quasi iste voluptatem possimus laboriosam facilis?</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br><br><br><br><br>
+                    <h1 class="text-center">Step Five: Transmission electron microscopy (TEM)</h1>
+                    <h3>Aim</h3>
+                    <p class="lead">&nbsp;&nbsp;&nbsp;&nbsp;To examine the exact form of aptamer and confirm whether aptamer-graphene oxide nanoparticle complex is stably formed.</p>       
+                    <h3>Material & Method (more info)</h3>
+                    <ol class="lead">
+                        <li>According to experiment 1~3, we chose cw3/tq-21 graphene oxide complex as our sample.</li>
+                        <li>Dilute the complex solution from 5000nM into 50nM and vortex the solution.</li>
+                        <li> Drop a single drop of solution onto a 3mm 200 mesh copper grid.</li>
+                        <li> Dry the washed sample in vacuum oven overnight.</li>
+                        <li>Examine the sample using JEOL JEM 2100 PLUS transmission electron microscope. </li>
+                    </ol>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;The following magnification conditions are used: 200kV, 300,000x.
+                        <figure>
+                            <img src="img/tem-machine.jpg" alt="" class="ml-auto mr-auto">
+                            <figcaption class="text-center">Picture source: JEOL official website</figcaption>
+                        </figure>
+                    </p>
+                    <h3>Result</h3>
+                    <figure>
+                        <img src="img/step-5-result-1.png" alt="" width="600" class="ml-auto mr-auto">
+                        <figcaption class="text-center">
+                            Photo(1) Pure aptamer. TEM magnification 200kx <br>
+                            The darker regions (labeled with yellow) are aptamer crystals.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/step-5-result-2.png" alt="" width="600" class="ml-auto mr-auto">
+                        <figcaption class="text-center">
+                            Photo(2) A closer look of aptamer crystal lattice under TEM <br>
+                            The linear structures marked with red lines under TEM are aptamer crystal lattices. After dehydration, aptamers will crystalize as shown.
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <div class="text-center">
+                            <img src="img/step-5-result-3-1.png" alt="" width="300" class="d-inline">
+                            <img src="img/step-5-result-3-2.png" alt="" width="300" class="d-inline">
+                        </div>
+                        <figcaption class="text-center">
+                            Photos(3)(4) Aptamer-Graphene Oxide complex. Magnified at 200kx <br>
+                            The margin of graphene-oxide sheet is labeled with red lines, and aptamers are labeled with yellow. 
+                        </figcaption>
+                    </figure>
+                    <h3>Discussion</h3>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Theoretically, aptamers are affinitive to graphene oxide particles due to abundant pi 
+                        bonds on both materials. They conjugate mainly through pi-pi stacking interaction. In this experiment, 
+                        we examined the complex under TEM to confirm if aptamers really attach to graphene oxide nanoparticles. 
+                        The photos show that after dehydration, pure aptamer arranged into lattice structure. On the other hand, 
+                        we observed both similar lattice structure and aptamer monomer on the surface of GO nanoparticle. 
+                        More crystal structures are observed under aptamer-GO complex than aptamer itself. 
+                        The result is consistent with our prediction.
+                    </p>
                 </div>
             </div>
         </div>

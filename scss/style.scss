@@ -239,7 +239,18 @@ canvas {
     padding: 0.5rem;
 }
 
+caption {
+    color: #6c757d;
+    caption-side: top;
+}
 
+figcaption {
+    color: #6c757d;
+}
+
+.highlight {
+    background: yellow;
+}
 /*FUTURE PAGE*/
 
 #pcr {
