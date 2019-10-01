@@ -99,9 +99,20 @@ img {
 .member-picture {
   display: inline; }
 
+#thanks {
+  background: #f5f6f7; }
+
+#sponsor p {
+  text-align: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.2rem; }
+
 /*PROJECT IDEA PAGE*/
 p {
-  font-size: 1.2rem !important; }
+  font-size: 1.2rem !important;
+  margin-top: 0;
+  margin-bottom: 1rem; }
 
 #anchors {
   padding-top: 130px !important; }
@@ -132,6 +143,9 @@ p {
   padding-left: 2rem;
   padding-right: 2rem;
   padding-top: 1.2rem; }
+
+#background p {
+  padding-top: 0; }
 
 .subtitle {
   font-weight: 500;
