@@ -109,7 +109,8 @@ img {
     padding-top:150px;
 }
 
-#members img {
+#members img,
+#mentor img {
     margin-top:-50px;
 }
 
@@ -117,11 +118,13 @@ img {
     color:#000;
 }
 
-#members h5 {
+.card h5 {
     color:#6c757d;
 }
 
-#members .card:hover {
+
+
+.card:hover {
     .card-body {
         background:#1971ff;
         color:#fff;
@@ -134,7 +137,7 @@ img {
     }
 }
 
-.card-body {
+#members .card-body {
     min-height: 355px;
 }
 
@@ -143,6 +146,10 @@ img {
 }
 
 #thanks {
+    background: #fff;
+}
+
+#sponsor {
     background: #f5f6f7;
 }
 

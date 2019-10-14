@@ -76,30 +76,34 @@ img {
 #members {
   padding-top: 150px; }
 
-#members img {
+#members img,
+#mentor img {
   margin-top: -50px; }
 
 #members i {
   color: #000; }
 
-#members h5 {
+.card h5 {
   color: #6c757d; }
 
-#members .card:hover .card-body {
+.card:hover .card-body {
   background: #1971ff;
   color: #fff; }
-#members .card:hover h5 {
+.card:hover h5 {
   color: #fff; }
-#members .card:hover i {
+.card:hover i {
   color: #fff; }
 
-.card-body {
+#members .card-body {
   min-height: 355px; }
 
 .member-picture {
   display: inline; }
 
 #thanks {
+  background: #fff; }
+
+#sponsor {
   background: #f5f6f7; }
 
 #sponsor p {
