@@ -85,8 +85,82 @@
     <!--CANVAS FLOW CHART-->
     <canvas id="myCanvas" class="ml-auto"></canvas>
 
+    <!--SIMULATION-->
+    <section id="simulation" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col py-5">
+                    <h2 class="text-center mb-3">Aptamer-Polymerase Docking Simulation</h2>
+                    <table style="border-collapse: collapse;" border="1" class="ml-auto mr-auto experiment-table table table-bordered table-hover" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="text-center align-middle">Aptamer Name</th>
+                                <th class="text-center align-middle">Aptamer Sequence</th>
+                                <th class="text-center align-middle">Docking Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center align-middle">CW-1</td>
+                                <td class="text-center align-middle">5′-GTT CAG GAC GCT TAT GTG AAC TTT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-cw1.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">CW-3</td>
+                                <td class="text-center align-middle">5′-CGA TCA TCT CAG AAC ATT CTT AGC GTT TTG TTC TTG TGT ATG ATC GTT T-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-cw3.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">CW-4</td>
+                                <td class="text-center align-middle">5′-TTT TTT GGC GGA GCG ATC ATC TCA GAG CAT TCT TAG CGT TTT GTT CTT GTC TAT GAT TT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-cw4.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">Aptamer 4-1</td>
+                                <td class="text-center align-middle">5′-ACT TGA TGG CGG GTG TGG TAG GCG CCA TCT TTT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-apt4-1.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">Aptamer 6-10</td>
+                                <td class="text-center align-middle">5′-CAA GAC GGG CGG GTG TGG TAG GCG CCC GTG TTT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-apt6-10.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">Anti-Aptamer</td>
+                                <td class="text-center align-middle">5′-ACA TTG CTC TTC ATA TAG TGA CAA TGT ACA GTA TTG TTT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-anti-apt.png" alt="" width="150">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center align-middle">TQ21</td>
+                                <td class="text-center align-middle">5′-TTC TCG GTT GGT CTC TGG CGG AGC GAT CAT CTC AGA GCA TTC TTA GCG TTT TGT TCT TGT GTA TGA TTC GCT TTT CCC TTT-3’</td>
+                                <td class="text-center align-middle">
+                                    <img src="img/sim-tq21.png" alt="" width="150">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;We chose HDOCK SERVER to simulate the 3D structure of our aptamer and Taq polymerase. The key point of simulation is to understand the aptamers binding site of Taq polymerase respectively. In the following experiments, we are going to hybrid two aptamers to make aptamer dimer. In our prediction, the dimer can work on the different binding site simultaneously and improve the inhibitory efficiency.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
     <!--STEP 1-->
-    <section id="one" class="bg-secondary">
+    <section id="one">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -126,6 +200,7 @@
                         <li>Samples are incubated at room temperature for 30min to form up polymerase-aptamer complex
                             <figure>
                                 <img src="img/experiment-step1-3.png" alt="" class="ml-auto mr-auto mt-2">
+                                <figcaption class="text-center">Figure 3. Aptamer combining to Taq polymerase</figcaption>
                             </figure>
                         </li>
                         <li>1.1μl 49bp hairpin DNA are added in every sample tube and kept on ice box to avoid room temperature PCR</li>
@@ -316,7 +391,7 @@
         </div>
     </section>
     <!--STEP 2-->
-    <section id="two">
+    <section id="two" class="bg-secondary">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -398,7 +473,7 @@
                                 if two aptamer have different binding site on polymerase, they can inhibit the enzyme simultaneously.
                                 <figure>
                                     <img src="img/hybrid-aptamer.png" alt="" width="600" class="ml-auto mr-auto">
-                                    <figcaption class="text-center" style="transform: translateY(-20px)">
+                                    <figcaption class="text-center">
                                         figure1: aptamer complementary sequence <br>
                                         Left: <u>ATGCAACATATTTACGAT</u> <br>
                                         Right: <u>TACGTTGTATAAATGCTA</u>
@@ -693,7 +768,7 @@
         </div>
     </section>
     <!--STEP 3-->
-    <section id="three" class="bg-secondary">
+    <section id="three">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -935,7 +1010,7 @@
         </div>
     </section>
     <!--STEP 4-->
-    <section id="four">
+    <section id="four" class="bg-secondary">
         <div class="container">
                 <div class="row">
                     <div class="col py-5">
@@ -1044,7 +1119,7 @@
             </div>
     </section>
     <!--STEP 5-->
-    <section id="five" class="bg-secondary">
+    <section id="five">
         <div class="container">
             <div class="row">
                 <div class="col py-5">
@@ -1101,6 +1176,30 @@
                         we observed both similar lattice structure and aptamer monomer on the surface of GO nanoparticle. 
                         More crystal structures are observed under aptamer-GO complex than aptamer itself. 
                         The result is consistent with our prediction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONCLUSION-->
+    <section id="conclusion" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col py-5">
+                    <h2 class="text-center">Conclusion</h1>
+                    <p class="lead">
+                        &nbsp;&nbsp;&nbsp;&nbsp;We choose PCR as our model in our experiment 
+                        concerning the relationship between aptamers and nanoparticles. And we hope by 
+                        doing so, we can prove the aptamer-NP complex maintain or even enhance aptamer function. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;The reason of choosing PCR model in our experiment is because the efficiency of Taq polymerase can be quantified by analysis of DNA bands in electrophoresis gel image. The more Taq polymerase being inhibited because of the binding of aptamers, the product bands would become weaker. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;First, both the experiment of gel electrophoresis and CGE result show that among all aptamers, tq-21 has the best inhibition efficiency, the ability to modulate the enzyme and release at designated temperature range.  Also, other aptamers such as 4-1 and cw-3 all show promising results. Meanwhile, the computer analysis of aptamer model brings out the predicted binding sites of these, which makes our evidence more solid. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Next, we hypothesized that each kind of aptamer has its own specificity, and if we combine two aptamers together, the dimer complex can inhibit different enzymes’ binding sites simultaneously, therefore elevate the efficiency of inhibition. Hence, we create hybrid aptamer complex by adding a tail with complementary sequence on the aptamer, so two aptamers can anneal to each other. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Further on, our TEM results and separation by centrifuge have both clearly shown that polyA modified aptamers are highly affinitive to graphene oxide, with a yield of roughly 0.09 mole aptamer per gram GO. Our results suggested that aptamer-GO complexes are 4 times more inhibitive to polymerase than aptamer dimers and 10 times more inhibitive than aptamer monomers at a high temperature of 65 degrees. According to Liang, et.al, aptamer-GO complex protects DNA/RNA from enzymatic degradation [1].Other than stereochemical reasons, the thermodynamic stability might also contribute to the distinctive differences between complexes and monomers. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Finally, we examined the inhibitory effect of aptamer-NP complex in whole genome PCR procedure. The result that multiple bands intensity are significantly deducted, which confirmed the effectiveness of aptamer-NP complex. The result suggested that utilizing aptamer-NP complex potentially simplifies hot start PCR procedure and improves PCR quality. By doing so, various fields of PCR application, such as diagnosis, sequencing, and detection, could yield more accurate results. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Our results have confirmed that the aptamer-NP complex could serve as an efficient modulator of Taq pol in PCR. There are still more questions for further studies to research, such as the mechanism of aptamer-NP complex modulation. In addition, apart from temperature, are there any other ways to influence the binding of aptamer-NP complex and protein? The factors like pH, electromagnetic wave, and chemical substrate may also have different effect on the complex. In the future, we are going to design more aptamers and apply our aptamer-NP complex to other proteins, such as receptor, antigen or enzymes, and try to modulate their function. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;To sum up, we have proven that aptamer-NP complex can modulate protein. Aptamer can specifically bind on protein just like antibody. Besides, nanoparticles have many characteristics such as color, charge, and conductivity. By combining different aptamers and nanoparticles together, we can get more complex for  various applications. <br>
+                        <br>
+                        [1]Liang,et. al,(2013),Stabilization of ssRNA on Graphene Oxide Surface: An Effective Way to Design Highly Robust RNA Probes. Anal. Chem.85,4,2269-2275.
                     </p>
                 </div>
             </div>

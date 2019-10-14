@@ -6,7 +6,9 @@ var c = canvas.getContext('2d');
 
 
 var bone = new Image();
-bone.src = 'https://i.ibb.co/fD04RTq/flow.png';
+bone.src = 'https://i.ibb.co/P1JkJDP/flow.png';
+
+
 
 var linkText;
 var inLink = false;
@@ -27,8 +29,57 @@ function on_mousemove(e) {
   x = e.offsetX;
   y = e.offsetY;
   console.log(x);
-  if(y >= 110 && y<= 180){
-    if(x >= 91 && x <= 170){
+  if(y >= 10 && y <= 132) {
+    if(x >= 96 && x <= 228){
+      e.target.style.cursor = 'pointer';
+      linkText = '#one';
+      inLink = true;
+    }else if(x >= 280 && x <= 405) {
+      e.target.style.cursor = 'pointer';
+      linkText = '#three';
+      inLink = true;
+    }else if(x >= 488 && x <= 622) {
+      e.target.style.cursor = 'pointer';
+      linkText = '#five';
+      inLink = true;
+    }
+    else {
+      e.target.style.cursor = '';
+      inLink = false;
+    }
+  }else if(y >= 373 && y <= 496) {
+    if(x >= 180 && x <= 313){
+      e.target.style.cursor = 'pointer';
+      linkText = '#two';
+      inLink = true;
+    }else if(x >= 394 && x <= 522) {
+      e.target.style.cursor = 'pointer';
+      linkText = '#four';
+      inLink = true;
+    }else if(x >= 22 && x <= 138) {
+      e.target.style.cursor = 'pointer';
+      linkText = '#simulation';
+      inLink = true;
+    }else {
+      e.target.style.cursor = '';
+      inLink = false;
+    }
+  }else {
+    e.target.style.cursor = '';
+    inLink = false;
+  }
+  if(y >= 285 && y <= 339) {
+    if(x >= 524 && x <= 682) {
+      e.target.style.cursor = 'pointer';
+      linkText = '#conclusion';
+      inLink = true;
+    }else {
+      e.target.style.cursor = '';
+      inLink = false;
+    }
+  }
+  /* if(y >= 110 && y<= 180){
+    if(x >= 96 && x <= 228){
       e.target.style.cursor = 'pointer';
       linkText = '#one';
       inLink = true;
@@ -60,8 +111,9 @@ function on_mousemove(e) {
   }else {
     e.target.style.cursor = '';
     inLink = false;
-  }
+  } */
 }
+
 
 function on_click(event) {
   if(inLink) {
